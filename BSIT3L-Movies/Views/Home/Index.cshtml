@@ -1,0 +1,17 @@
+﻿@model List<MovieViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="movies">
+  <div class="grid-container">
+    @foreach (var movie in Model) {
+      <div class="movie-info grid-item">
+        <img src="~/@movie.Img">
+        <h5><a class="title" href="/movies/getmovie/@movie.Id">@movie.Name</a></h5>
+        <p>@movie.ReleaseYear</p>
+      </div>
+    }
+  </div>
+</section>

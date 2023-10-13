@@ -1,0 +1,30 @@
+﻿@model BSIT3L_Movies.Models.MovieViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie</title>
+</head>
+<body class="Details">
+    <div class="details">
+        
+        <h2 class="G">Movie Details</h2>
+    
+    <h4 class="GM">@Model.Name</h4>
+   
+    <img src="~/@Model.Img">
+    <p class="GM">Genre: @Model.Genre</p> 
+    <p class="GM">Release Year: @Model.ReleaseYear</p>
+    <p class="GM">Description: @Model.Desc</p>
+    <hr style="width: 72%;", color="#000000", size="5px #000000", >
+    <p class="GM">Director/s: @Model.Direct</p>
+     <hr style="width: 72%;", color="#000000", size="5px #000000", >
+    <p class="GM">Rating: @Model.Rating</p>
+     <hr style="width: 72%;", color="#000000", size="5px #000000", >
+     <button class="button"><a class="title" href="@Model.Link">Watch the trailer</a></button>
+   
+    
+    </div>
+</body>
+</html>
